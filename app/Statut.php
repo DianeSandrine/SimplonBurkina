@@ -1,0 +1,15 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Statut extends Model
+{
+    protected $table = 'statuts';
+    
+    public function simplonien()
+    {
+        return $this->hasMany('App\Simplonien');
+    }
+}
