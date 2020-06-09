@@ -47,8 +47,9 @@
       </div>
 
       <div class="sidebar-item search-form">
-        <form action="">
-          <input type="text">
+        <form action="" method="POST">
+          	@csrf
+          <input type="text" name="motRecherche" placeholder="rechercher...">
           <button type="submit"><i class="icofont-search"></i></button>
         </form>
       </div><!-- End sidebar search formn-->
@@ -60,7 +61,7 @@
     <div class="container d-flex">
 
       <div class="logo mr-auto">
-        <a href="{{url('home')}}"><img src="{{asset('assets/img/logosimplon.png')}}" alt="" class="img-fluid"></a>
+        <a href="{{url('/')}}"><img src="{{asset('assets/img/logosimplon.png')}}" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
@@ -82,7 +83,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <a href="{{url('home')}}"><img src="{{asset('assets/img/logosimplon.png')}}" alt="" class="img-fluide"></a>
+            <a href="{{url('/')}}"><img src="{{asset('assets/img/logosimplon.png')}}" alt="" class="img-fluide"></a>
             <p>
               Université de ouagadougou, Joseph Ki Zerbo, rue... <br>
               Ouagadougou, au sein de l'Agence Universitaire de la Francophonie<br>

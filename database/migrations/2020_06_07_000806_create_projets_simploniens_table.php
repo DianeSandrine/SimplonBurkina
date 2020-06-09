@@ -14,10 +14,10 @@ class CreateProjetsSimploniensTable extends Migration
     public function up()
     {
              Schema::create('projets_simploniens', function (Blueprint $table) {
-                $table->increments('id');
-                $table->timestamps();
+                $table->increments('id');               
                 $table->integer('idProjet')->unsigned();
-                $table->integer('telephone')->index();
+                $table->bigInteger('telephone');
+                $table->timestamps();
 
                 $table->foreign('idProjet')->references('idProjet')->on('projets')
                             ->onDelete('restrict')

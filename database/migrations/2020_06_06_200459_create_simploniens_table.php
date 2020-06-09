@@ -13,8 +13,9 @@ class CreateSimploniensTable extends Migration
      */
     public function up()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::create('simploniens', function (Blueprint $table) {
-            $table->integer('telephone')->primary();        
+            $table->bigInteger('telephone')->primary();        
             $table->string('nom', 80);
             $table->string('prenom', 80);
             $table->string('genre');
@@ -28,10 +29,11 @@ class CreateSimploniensTable extends Migration
             $table->foreign('idStatut')
                   ->references('idStatut')
                   ->on('statuts')
-                  ->onDelete('restrict')
-                  ->onUpdate('restrict');
+               ->onDelete('restrict')
+               ->onUpdate('restrict');
             $table->timestamps();
         });
+
     }
 
     /**
