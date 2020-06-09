@@ -8,6 +8,8 @@ class Simplonien extends Model
 {
     protected $table = 'simploniens';
 
+    protected $fillable=['idStatut'];
+  
     public function statut()
     {
         return $this->belongsTo('App\Statut');

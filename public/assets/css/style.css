@@ -746,6 +746,12 @@ section {
 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  width: 350px;
+  height: 350px;
+}
+.portfolio .apprenant {
+  width: 350px;
+  height: 350px;
 }
 
 .portfolio .portfolio-item .portfolio-info {
@@ -814,6 +820,81 @@ section {
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+# Events
+--------------------------------------------------------------*/
+.events .card {
+  border: 0;
+  padding: 0 30px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.events .card-img {
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  overflow: hidden;
+  z-index: 9;
+  border-radius: 0;
+}
+
+.events .card-img img {
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+  width: 594px;
+  height: 396px;
+}
+
+.events .card-body {
+  z-index: 10;
+  background: #fff;
+  border-top: 4px solid #fff;
+  padding: 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-top: -60px;
+  transition: 0.3s;
+}
+
+.events .card-title {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.events .card-title a {
+  color: #37423b;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.events .card-text {
+  color: #5e5e5e;
+}
+
+.events .read-more a {
+  color: #777777;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.events .read-more a:hover {
+  color: rgb(206, 0, 51);
+}
+
+.events .card:hover img {
+  transform: scale(1.1);
+}
+
+.events .card:hover .card-body {
+  border-color: rgb(206, 0, 51);
+}
+
+.events .card:hover .card-body .card-title a {
+  color: rgb(206, 0, 51);
 }
 
 /*--------------------------------------------------------------
@@ -1369,7 +1450,7 @@ border:none;
 
   box-shadow: none;
 
-  margin-bottom: 30px;
+  margin-bottom: 0;
 
 }
 
@@ -1380,6 +1461,9 @@ border:none;
   padding: 0 15px;
 
   min-height: 34px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(206, 0, 51);
 
   border-left: 1px solid #ccc;
 
@@ -1737,11 +1821,91 @@ border:none;
 
   display: inline-block;
 
-  margin-top: 60px;
+  margin-top: 0;
 
-  padding: 15px;
+  padding:0 15px;
 
   width: 100%;
+
+}
+
+.form .required{
+
+  font-size: 16px;
+
+  color: #00a0df;
+
+}
+
+.sm-input {
+
+  width: 175px;
+
+}
+
+
+
+.form-horizontal .form-group {
+
+  border-bottom: 1px solid #eff2f7;
+
+  padding-bottom: 15px;
+
+  margin-bottom: 15px;
+
+}
+
+
+
+.form-horizontal .form-group:last-child {
+
+  border-bottom: none;
+
+  padding-bottom: 0px;
+
+  margin-bottom: 0px;
+
+}
+
+
+
+
+
+.form-horizontal .form-group .help-block {
+
+  margin-bottom: 0;
+
+}
+
+
+
+
+
+.round-input {
+
+  border-radius: 500px;
+
+  -webkit-border-radius: 500px;
+
+}
+
+
+
+
+
+.m-bot15 {
+
+  margin-bottom: 15px;
+
+}
+
+
+
+.form-horizontal .checkbox-inline > input {
+
+  margin-top: 1px;
+
+border:none;
 
 }
 
@@ -1956,14 +2120,17 @@ border:none;
 --------------------------------------------------------------*/
 .trainers .member {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   background: #fff;
   border: 1px solid #eef0ef;
+  border-radius: 5px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1)
 }
 
 .trainers .member img {
   margin: -1px -1px 30px -1px;
+  width: 348px;
+  height: 348px;
 }
 
 .trainers .member .member-content {
